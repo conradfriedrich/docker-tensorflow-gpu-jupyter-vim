@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  tf:
+    #image: docker-keras
+    build: .
+    ports:
+      - 8888:8888
+    volumes:
+      - ../:/tf
