@@ -1,5 +1,5 @@
-#FROM tensorflow/tensorflow:latest-gpu-jupyter
-FROM tensorflow/tensorflow:latest-jupyter
+FROM tensorflow/tensorflow:latest-gpu-jupyter
+#FROM tensorflow/tensorflow:latest-jupyter
 RUN mkdir -p $(jupyter --data-dir)/nbextensions \
     && cd $(jupyter --data-dir)/nbextensions \
     && git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding \
