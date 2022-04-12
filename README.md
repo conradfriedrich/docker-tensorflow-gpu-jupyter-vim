@@ -4,10 +4,7 @@
 
   <https://github.com/lambdalisue/jupyter-vim-binding>
 
-  Check out this repository into any project folder with
-  ```
-  git clone https://github.com/conradfriedrich/docker-tensorflow-gpu-jupyter-vim
-  ```
+  Check out this repository into any project's root directory
 
   Then
   ```
@@ -21,4 +18,11 @@
   systemctl start docker
   sudo groupadd docker
   sudo usermod -aG docker $USER
+  ```
+
+## Disable GPU support
+
+  To run on hardware without gpu support (e.g. old Thinkpad), switch branches:
+  ```
+  git checkout no-gpu
   ```
